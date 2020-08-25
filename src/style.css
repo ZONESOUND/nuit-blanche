@@ -1,0 +1,14 @@
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+#playControl {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: black;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+}
