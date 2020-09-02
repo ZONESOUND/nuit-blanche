@@ -1,14 +1,104 @@
-.swiper-container {
+body, html {
+    background: black;
     width: 100%;
-    height: 300px;
 }
 
-#playControl {
+
+/* Swiper */
+.swiper-container {
+    width: 100%;
+}
+
+.swipe-all {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.swipe-img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2.5%;
+}
+
+.swipe-txt {
+    margin-top: 2.5%;
+    color: white;
+}
+
+.swipe-title {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+
+.swipe-title i {
+    margin-right: 20px;
+}
+
+.swipe-content {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* play control part */
+#bottomControl {
     position: fixed;
     width: 100%;
-    height: 70px;
-    background: black;
     z-index: 100;
     left: 0;
     bottom: 0;
+    height: 70px;
+    
+}
+
+#progress {
+    height: 3px;
+    overflow: hidden;
+}
+
+#playControl {
+    width: 100%;
+    height: 67px;
+    background: #333333;
+}
+
+.control-all {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    height: 67px;
+    color: white;
+    margin: 0 15px 0 20px;
+    width: calc(100% - 35px);
+}
+.control-all .row {
+    
+}
+
+/* .control-all span {
+    transform: translateY(12.5%);
+    vertical-align : middle
+}
+.control-all i {
+    transform: translateY(12.5%);
+} */
+.control-all div {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    width: 100%;
+}
+
+.control-img {
+    width: 100%;
+    max-width: 40px;
+}
+
+.control-title {
+    line-height: 100%;
+}
+
+.hidden {
+    display: none;
 }

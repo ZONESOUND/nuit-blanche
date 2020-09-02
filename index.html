@@ -6,32 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
 </head>
 <body class="container mt-5">
   <div class="step-1">
     <button id="start" class="btn btn-block btn-outline-dark">START</button>
   </div>
-  <div class="step-2" style="display:none">
+  <div id="loading" class='step-2'>
+    <div id="loading-content">
+      <span class="loader"></span>
+      LOADING
+    </div>
+	</div>
+  <div class="step-3" style="display:none">
     <!-- Slider main container -->
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
       </div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
 
     </div>
-    <div id="playControl"></div>
+    <div id="bottomControl">
+      <div id="progress"></div>
+      <div id="playControl">
+      </div>
+    </div>
     
     
   </div>
-  <audio id="audio" controls>
+  <!-- <audio id="audio" controls> -->
   </audio>
 </body>
 </html>
