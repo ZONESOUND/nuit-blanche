@@ -38,7 +38,7 @@ function playAction() {
 }
 
 function forwardAction() {
-    audioArray[nowPlaying].currentTime += 30;
+    audioArray[nowPlaying].currentTime += 15;
 }
 
 function play(el) {

@@ -5,7 +5,6 @@ import Swiper, {Navigation} from 'swiper';
 // import Swiper styles
 import 'swiper/swiper-bundle.css';
 import './style.css';
-import './progress.js';
 import './init.js';
 import './loader.css';
 import {initPlay} from './play.js';
